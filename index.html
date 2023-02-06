@@ -1,0 +1,174 @@
+<!--
+Nama : irfan arfiansyah
+NIM  : 10122393
+Kelas: IF -11
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ommovie</title>
+  <link rel="shortcut icon" href="./assets/images/1.png" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#">
+        <img src="./assets/images/Ommovie__3_-removebg-preview.png" width="126" height="28" alt="Ommovie" class="logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link label-lg link:hover">Home</a>
+          </li>
+
+          <li>
+            <a href="#genre" class="navbar-link label-lg link:hover">Genres</a>
+          </li>
+
+          <li>
+            <a href="#new" class="navbar-link label-lg link:hover">New & Popular</a>
+          </li>
+          <li>
+            <a href="#footer" class="navbar-link label-lg link:hover">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <form id="form" class="form-inline label-lg link:hover">
+          <input type="form-control" placeholder="Search" id="search" class="form-control navbar-link "
+            aria-label="Search">
+        </form>
+
+        <button class="nav-toggle-btn" aria-label="menu toggle" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true" class="default-icon"></ion-icon>
+
+          <ion-icon name="close-outline" aria-hidden="true" class="active-icon"></ion-icon>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+  <br><br><br>
+  <div class="bok4" aria-label="home" id="banner">
+    <div id="banner__contents">
+      <h1 id="banner__title"></h1>
+      <ul class=" navbar-list">
+        <li class="navbar-link label-lg " id="release"></li>
+        <li class=""><i class="fas fa-star fa-"></i></li>
+        <li class=" " id="rating"></li>
+      </ul>
+      <div id="banner__buttons">
+        <button id="banner__button"><i class="far fa-play-circle fa-2x"></i></button>
+      </div>
+      <p id="banner__description"></p>
+    </div>
+  </div>
+
+  <br>
+  <div class="bok1">
+    <div>
+      <h2 id="genre" class="headline-md section-title">Genres</h2>
+      <div id="tags"></div>
+    </div>
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn " onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content" id="overlay-content"></div>
+
+      <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"></a>
+
+      <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow"></a>
+
+    </div>
+    <div>
+      <h2 id="new" class="headline-md section-title">New & Popular</h2>
+      <main id="main"></main>
+    </div>
+
+    <div class="pagination">
+      <div class="page" id="prev">Previous Page</div>
+      <div class="current" id="current">1</div>
+      <div class="page" id="next">Next Page</div>
+
+    </div>
+  </div>
+  <!-- 
+    - #BACK TO TOP
+  -->
+  <footer class="footer" id="footer">
+    <div class="bok2">
+      <ul class="navbar-list">
+
+        <div class="navbar-link label-lg ">Contact Us :</div>
+        <li>
+          <a href="https://www.instagram.com/irfanarfsyh/" class="navbar-link label-lg link:hover">instagram
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="navbar-link label-lg link:hover"> Whatsapp
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="navbar-link label-lg link:hover">Github
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto: irfan.10122393@mahasiswa.unikom.ac.id" class="navbar-link label-lg link:hover">Email
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        <p class="garis"></p>
+        <br>
+        <p class="body-md text-center copyright">
+          &copy; 2023 Ommovie. Developed with <span class="span">❤</span> by Irfan.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#top" class="back-to-top btn-icon" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+  <div class="body-bg-shape"></div>
+  <script src="second.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
